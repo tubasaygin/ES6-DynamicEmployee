@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Dynamic Employee</title>
+</head>
+<body>
+    <div class="container mt-3">
+        <h2 style="text-align:center; color:green;">Welcome to Dynamic Employee</h2>
+        <div id = "message"></div>
+        <div class="row">
+          
+          <div class="col-7 mt-3">
+            <form>
+                <div class="form-group">
+                  <label>Full Name</label>
+                  <input type="text" class="form-control" id="fullname"  placeholder="Enter fullname">
+                </div>
+                <div class="form-group">
+                    <label>Date of Birth</label>
+                    <input type="text" class="form-control" id="dateOfBirth" placeholder="Enter date of birth">
+                </div>
+                <div class="form-group">
+                    <label>Department</label>
+                    <input type="text" class="form-control" id="department" placeholder="Enter department">
+                </div>
+                <div class="form-group">
+                    <label>Salary (3000-10000)</label>
+                    <input id = "salary" type="range"  min="3000" max="10000" class="form-control-range">                
+                </div>
+                <div class="form-group">
+                    <label>Image</label>
+                    <input id = "image" type="file" class="form-control-file border">                
+                </div>
+                
+               
+                <button id = "formsubmit" type="submit" class="btn btn-primary">Save</button>
+            </form>
+          </div>
+          <div class="col-5 mt-5">
+            <input type="text" id="myInput" onkeyup="search()" placeholder="Search for names..">
+            <ul id = "list" class="list-group list-group-flush">
+                
+                
+            </ul>
+          </div>
+          
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"crossorigin="anonymous"></script>
+    <script src="scriptES6.js"></script>
+</body>
+</html>
